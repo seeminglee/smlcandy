@@ -28,11 +28,11 @@ Display additional metadata about the folder I am in and when I have invoked tho
     <dt>sml@sml-mac</dt>
     <dd>[username]@[hostname]</dd>
 
-    <dt>( sml py )</dt>
+    <dt>( smlpy )</dt>
     <dd>Name of the virtualenv project I am currently working on. If you don't use virtualenv, just remove the relevant bits.</dd>
 
     <dt>[git:master+?]</dt>
-    <dd>Status of the git repo. Tis is made possible by using [Armin Ronacher's excellent vcprompt](https://bitbucket.org/mitsuhiko/vcprompt) implementation.</dd>
+    <dd>Status of the git repo. Tis is made possible by using Armin Ronacher (mitsuhiko)'s excellent [vcprompt](https://bitbucket.org/mitsuhiko/vcprompt).</dd>
 
     <dt>Wed Mar 14 03:33:15</dt>
     <dd>It's the date. I use this because often I have no idea when I last typed that something inside the Terminal. Was is an hour ago, a day ago or a month ago? On my Mac and especially when I'm inside Linux, the OS runs for so long that it is easier for me to tell when something was run.</dd>
