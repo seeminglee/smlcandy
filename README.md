@@ -26,7 +26,7 @@ Display additional metadata about the folder I am in and when I have invoked tho
 
 <dl>
     <dt>sml@sml-mac</dt>
-    <dd>[username]@[computer name]</dd>
+    <dd>[username]@[hostname]</dd>
 
     <dt>( sml py )</dt>
     <dd>Name of the virtualenv project I am currently working on. If you don't use virtualenv, just remove the relevant bits.</dd>
