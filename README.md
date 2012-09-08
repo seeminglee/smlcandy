@@ -22,7 +22,7 @@ Insert relevant bits from [bash_profile_snippet.sh](https://github.com/seemingle
 
 ### Wayfinding
 
-Display additional metadata about the folder I am in and when I have invoked those commands when I scroll through the terminal history. 
+Display additional metadata about information which I find helpful when using the command line. 
 
 <dl>
     <dt>sml@sml-mac</dt>
