@@ -2,32 +2,51 @@
 
 ## Introduction
 
-I am not a super nerd so I can't just work inside the terminal with a prompt like this:
-
-```shell
-    $
-```
-
-So I customize it to suit my needs. In particular, it tries to do the following things:
-Here are the list of features:
+I am not a super geek so I can't just work inside a default black and white terminal with a dollar sign, so I customized mine to suit my needs. In particular, it tries to do the following things:
 
 ### Differentiate between files, folders and symbolic links
 
-I use aliases to change the default behavior of ls to append suffix (-F), enable colorized output (-G). I assigned a function to ll for long listings. Here an alias is not used because otherwise it can't be piped to less.
+Insert relevant bits from [bash_profile_snippet.sh](https://github.com/seeminglee/smlcandy/blob/master/bash_profile_snippet.sh) into your ~/.bash_profile config file.
 
-```shell
-    # ----------------------------------------------------------------------------
-    # Bash convenience
-    #   -F  Append /: path, *: executable, @: symlink, |: FIFO
-    #   -G  Enable colorized output
-    #   -h  if -l, use unit suffixes for file sizes
-    #   -k  if -s, print size allocation in kilobytes, not blocks.
-    alias ls='ls -FGk' 
-    function ll() { 
-        ls -lFGkha $1 | less
-    }
-    
-```
+<dl>
+    <dt>ls</dt>
+    <dd>I use aliases to change the default behavior of ls to append suffix (-F), enable colorized output (-G).</dd>
+    <dt>ll</dt>
+    <dd>I assign a function to ll for long listings. Normally when you does an ls -l you would want to pipe it to less anyway so it is included. The additional flags just utilize the same flags I used for ls as well as displaying file size allocation in human readable units like kilobytes as opposed to the default which is in blocks.</dd>
+</dl>
+
+
+### Wayfinding
+
+Display additional metadata about the folder I am in and when I have invoked those commands when I scroll through the terminal history. 
+
+<dl>
+    <dt>sml@sml-mac</dt>
+    <dd>[username]@[computer name]</dd>
+
+    <dt>( sml py )</dt>
+    <dd>Name of the virtualenv project I am currently working on. If you don't use virtualenv, just remove the relevant bits.</dd>
+
+    <dt>[git:master+?]</dt>
+    <dd>Status of the git repo. Tis is made possible by using [Armin Ronacher's excellent vcprompt](https://bitbucket.org/mitsuhiko/vcprompt) implementation.</dd>
+
+    <dt>Wed Mar 14 03:33:15</dt>
+    <dd>It's the date. I use this because often I have no idea when I last typed that something inside the Terminal. Was is an hour ago, a day ago or a month ago? On my Mac and especially when I'm inside Linux, the OS runs for so long that it is easier for me to tell when something was run.</dd>
+
+    <dt>~/lib/python/scipy-1.0dev/</dt>
+    <dd>The current folder aka $PWD. It's good to know where you are. I separate this out onto its own line because it gets unwieldingly long.</dd>
+</dl>
+
+
+### Shell history as number prefix
+
+Picking up a cue from [iPython](http://ipython.org), the awesome Python shell for humans, I added number prefixes to my command line as an ambient device to know how long that shell has been running for. I had meant for the number to reflect the same number used when invoking history but I haven't been able to figure out how yet. So if you know, let me know!
+
+
+### Differentiate between normal user and super user logins 
+
+Sometimes when you are sysadmin'ing, you need to invoke a lot of sudo commands, and if you know what are doing, often it's just easier to go into super user mode by invoking sudo su. Staying in this mode is dangeous, as you can often seriously damage your system. So I change color scheme to my candy prompt to a haunting red so I will be cautious when I am in this mode. This is achieved by using the SUDO_PS1 and SUDO_PS2 environment variables.
+
 
 ### Change default unix colors to more sensible choices
 
@@ -68,38 +87,7 @@ If you prefer things the way they are, by all means, comment out the export LSCO
     export LSCOLORS=Exfxbxdxcxegedabagacad
 ```
 
-### Shell history 
-
-Picking up a cue from [iPython](http://ipython.org), the awesome Python shell for humans, I added number prefixes to my command line as an ambient device to know how long that shell has been running for. I had meant for the number to reflect the same number used when invoking history but I haven't been able to figure out how yet. So if you know, let me know!
-
-```shell
-    [53]: $
-```
-
-### Wayfinding
-
-Display additional metadata about the folder I am in and when I have invoked those commands when I scroll through the terminal history. In the screenshot below:
-
-![Screenshot of iTerm](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
-
-<dl>
-    <dt>sml@sml-mac</dt>
-    <dd>[username]@[computer name]</dd>
-
-    <dt>( sml py )</dt>
-    <dd>Name of the virtualenv project I am currently working on. If you don't use virtualenv, just remove the relevant bits.</dd>
-
-    <dt>[git:master+?]</dt>
-    <dd>Status of the git repo. Tis is made possible by using [Armin Ronacher's excellent vcprompt](https://bitbucket.org/mitsuhiko/vcprompt) implementation.</dd>
-
-    <dt>Wed Mar 14 03:33:15</dt>
-    <dd>It's the date. I use this because often I have no idea when I last typed that something inside the Terminal. Was is an hour ago, a day ago or a month ago? On my Mac and especially when I'm inside Linux, the OS runs for so long that it is easier for me to tell when something was run.</dd>
-
-    <dt>~/lib/python/scipy-1.0dev/</dt>
-    <dd>The current folder aka $PWD. It's good to know where you are. I separate this out onto its own line because it gets unwieldingly long.</dd>
-</dl>
-
-### Color palette
+### Color palette for iTerm
 
 This palette is based on the [Tango palette](http://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette) with some minor tweaks for better readability against a black background. 
 
@@ -110,12 +98,6 @@ To apply custom colors to iTerm, open up Preferences &gt; Colors:
 Click on the color cell of each item in Basic Colors and ANSI Colors. The Apple color palette will open up, where you can load up the file named [smlcandy.clr](http://github.com/seeminglee/smlcandy/raw/master/smlcandy.clr) and repeat the process until all the colors have changed:
 
 ![Screenshot: Color palette preview](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-smlcandy-colors.png)
-
-## List of Files
-
-### bash_profile_snippets.sh
-
-Snippets of code to be inserted into your .bash_profile
 
 
 
@@ -224,3 +206,17 @@ The actual prompt. If you are not using VirtualEnv for Python and you don't want
     # PROMPT_COMMAND=update_prompt
     update_prompt
 ```
+
+
+## Installation
+
+1. Inside ~/.bash_profile, source the colorprompt.sh
+2. Insert relevant bits of alias and unix LSCOLORS exports where nececessary.
+3. That's it. There's no step 3.
+
+
+## Licensing
+
+You are free to use these code in anyway you wish. Feel free to give me credits but it's not necessary. I cannot be responsible for any potential system or data losses as a result of using this code. You are welcome to ask me questions on Twitter [@seeminglee](http://twitter.com/seeminglee) and I'll try to my best to answer them, but I won't be able to give you any extensive technical support.
+
+

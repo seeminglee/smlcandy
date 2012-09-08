@@ -1,4 +1,19 @@
 # ============================================================================
+# This is a snippet of code to be placed inside your .bash_profile
+
+# ============================================================================
+# Bash convenience
+#   -F  Append /: path, *: executable, @: symlink, |: FIFO
+#   -G  Enable colorized output
+#   -h  if -l, use unit suffixes for file sizes
+#   -k  if -s, print size allocation in kilobytes, not blocks.
+alias ls='ls -FGk' 
+function ll() { 
+    ls -lFGkha $1 | less
+}
+
+
+# ============================================================================
 # SML: Color Prompt for virtualenv  
 # 
 source ~/bin/colorprompt.sh
