@@ -2,13 +2,13 @@
 
 ### Result
 
-![SML iTerm Screenshot](screenshot-iterm.png)
+![SML iTerm Screenshot](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
 
 ### Color palette
 
 This palette is largely based on the Tango palette with some tweaks for better readability against black background.
 
-![SML iTerm Screenshot](screenshot-iterm-pref-colors.png)
+![SML iTerm Screenshot](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm-pref-colors.png)
 
 ## List of Files
 
