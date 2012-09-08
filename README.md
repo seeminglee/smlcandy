@@ -1,3 +1,11 @@
+## Screenshots
+
+### Result
+
+![SML iTerm Screenshot](./screenshot/iterm-screenshot.png)
+
+### Color palette
+
 ## List of Files
 
 ### bash_profile_snippets.sh
