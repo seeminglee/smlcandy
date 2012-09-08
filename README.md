@@ -2,7 +2,7 @@
 
 ### Result
 
-![SML iTerm Screenshot](./screenshot/iterm-screenshot.png)
+![SML iTerm Screenshot](/screenshot/iterm-screenshot.png)
 
 ### Color palette
 
