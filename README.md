@@ -3,7 +3,9 @@
 
 ## Introduction
 
-I am not a super geek so I can't just work inside a default black and white terminal with a dollar sign, so I customized mine to suit my needs. In particular, it tries to do the following things:
+I am not a super geek so I can't just work inside a default black and white terminal with a dollar sign, so I customized mine to suit my needs. This started first for fun when I was playing with Linux a while back, and I gradually improved on it as I find myself using the shell more and more working on both Mac and Linux platforms. 
+
+It tries to do the following things:
 
 
 ### Differentiate between files, folders and symbolic links
@@ -94,21 +96,22 @@ If you prefer things the way they are, by all means, comment out the export LSCO
 
 If you are on the Mac and you don't already use iTerm, use it. It's awesome. Go get it at http://iterm2.com
 
-This palette is based on the [Tango palette](http://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette) with some minor tweaks for better readability against a black background. 
-
-To apply custom colors to iTerm, open up Preferences &gt; Colors:
+This palette is based on the [Tango palette](http://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette) with some minor tweaks for better readability against a black background. To apply custom colors to iTerm, open up Preferences &gt; Colors:
 
 ![Screenshot: iTerm Color Preferences](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm-pref-colors.png)
 
-Click on the color cell of each item in Basic Colors and ANSI Colors. The Apple color palette will open up, where you can load up the file named [smlcandy.clr](http://github.com/seeminglee/smlcandy/raw/master/smlcandy.clr) and repeat the process until all the colors have changed:
+1. Click on the color cell of each item in Basic Colors and ANSI Colors. 
+2. The Apple color palette will open up, where you can load up the file named [smlcandy.clr](https://github.com/seeminglee/smlcandy/blob/master/smlcandy.clr) 
+3. Repeat the process until all the colors have changed.
 
 ![Screenshot: Color palette preview](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-smlcandy-colors.png)
 
+Note: if the color doesn't seem to show up correctly, you may wish to adjust the Minimum contrast settings. Consult iTerm's manual for details.
 
 
 ### Everything together
 
-The actual prompt in the file named [colorprompt.sh](https://github.com/seeminglee/smlcandy/blob/master/colorprompt.sh) where the whole thing is put together to give you the nice prompt for better usability. If you are not using VirtualEnv for Python and you don't want to show git status, just remove the relevant lines. The file is fairly verbose:
+The actual prompt is inside the file named [colorprompt.sh](https://github.com/seeminglee/smlcandy/blob/master/colorprompt.sh) where the whole thing is put together to give you the nice prompt for better usability. If you are not using VirtualEnv for Python and you don't want to show git status, just remove the relevant lines. The file is fairly verbose:
 
 ```shell
     #!/usr/bin/env bash
