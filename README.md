@@ -220,7 +220,7 @@ The actual prompt is inside the file named [colorprompt.sh](https://github.com/s
 
 1. Inside ~/.bash_profile, source the colorprompt.sh
 2. Insert relevant bits of alias and unix LSCOLORS exports where nececessary.
-3. That's it. There's no step 3.
+3. There's no step 3.
 
 
 ## Licensing
