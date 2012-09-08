@@ -95,8 +95,7 @@ Display additional metadata about the folder I am in and when I have invoked tho
 
     <dt>~/lib/python/scipy-1.0dev/</dt>
     <dd>The current folder aka $PWD. It's good to know where you are. I separate this out onto its own line because it gets unwieldingly long.</dd>
-
-
+</dl>
 
 ### Color palette
 
