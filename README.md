@@ -16,7 +16,7 @@ Insert relevant bits from [bash_profile_snippet.sh](https://github.com/seemingle
     <dt>ls</dt>
     <dd>I use aliases to change the default behavior of ls to append suffix (-F), enable colorized output (-G).</dd>
     <dt>ll</dt>
-    <dd>I assign a function to ll for long listings. Normally when you does an ls -l you would want to pipe it to less anyway so it is included. The additional flags just utilize the same flags I used for ls as well as displaying file size allocation in human readable units like kilobytes as opposed to the default which is in blocks.</dd>
+    <dd>I assign a function to ll for long listings. Normally when you do an ls -l you would want to pipe it to less anyway so it is included. The additional flags just utilize the same flags I used for ls as well as displaying file size allocation in human readable units like kilobytes as opposed to the default which is in blocks.</dd>
 </dl>
 
 
@@ -32,10 +32,10 @@ Display additional metadata about the folder I am in and when I have invoked tho
     <dd>Name of the virtualenv project I am currently working on. If you don't use virtualenv, just remove the relevant bits.</dd>
 
     <dt>[git:master+?]</dt>
-    <dd>Status of the git repo. Tis is made possible by using Armin Ronacher (mitsuhiko)'s excellent vcprompt https://bitbucket.org/mitsuhiko/vcprompt.</dd>
+    <dd>Status of the git repo. Tihs is made possible by using Armin Ronacher (mitsuhiko)'s excellent vcprompt https://bitbucket.org/mitsuhiko/vcprompt.</dd>
 
     <dt>Wed Mar 14 03:33:15</dt>
-    <dd>It's the date. I use this because often I have no idea when I last typed that something inside the Terminal. Was is an hour ago, a day ago or a month ago? On my Mac and especially when I'm inside Linux, the OS runs for so long that it is easier for me to tell when something was run.</dd>
+    <dd>The date, obviously. I use this because often I have no idea when I last typed that something inside the Terminal. Was is an hour ago, a day ago or a month ago? On my Mac and especially when I'm inside Linux, the OS runs for so long that it is easier for me to tell when something was run.</dd>
 
     <dt>~/lib/python/scipy-1.0dev/</dt>
     <dd>The current folder aka $PWD. It's good to know where you are. I separate this out onto its own line because it gets unwieldingly long.</dd>
