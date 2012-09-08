@@ -225,6 +225,4 @@ The actual prompt is inside the file named [colorprompt.sh](https://github.com/s
 
 ## Licensing
 
-You are free to use these code in anyway you wish. Feel free to give me credits but it's not necessary. I cannot be responsible for any potential system or data losses as a result of using this code. You are welcome to ask me questions on Twitter [@seeminglee](http://twitter.com/seeminglee) and I'll try to my best to answer them, but I won't be able to give you any extensive technical support.
-
-
+You are free to use these code in anyway you wish. Feel free to give me credits but it's not necessary. I cannot be responsible for any potential system or data losses as a result of using this code. You are welcome to ask me questions on Twitter [@seeminglee](http://twitter.com/seeminglee) and I'll try to my best to answer them, but I won't be able to give you any extensive technical support. Thanks for checking this out!
