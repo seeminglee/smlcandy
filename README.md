@@ -1,6 +1,6 @@
-## Introduction
-
 ![Screenshot of iTerm](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
+
+## Introduction
 
 I am not a super nerd so I can't just work inside the terminal with a prompt like this:
 
@@ -79,6 +79,8 @@ Picking up a cue from [iPython](http://ipython.org), the awesome Python shell fo
 ### Wayfinding
 
 Display additional metadata about the folder I am in and when I have invoked those commands when I scroll through the terminal history. In the screenshot below:
+
+![Screenshot of iTerm](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
 
 <dl>
     <dt>sml@sml-mac</dt>
