@@ -1,8 +1,10 @@
 ![Screenshot of iTerm](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
 
+
 ## Introduction
 
 I am not a super geek so I can't just work inside a default black and white terminal with a dollar sign, so I customized mine to suit my needs. In particular, it tries to do the following things:
+
 
 ### Differentiate between files, folders and symbolic links
 
@@ -50,7 +52,7 @@ Sometimes when you are sysadmin'ing, you need to invoke a lot of sudo commands, 
 
 ### Change default unix colors to more sensible choices
 
-The default unix colors designates the color red for executable. I tend not to use red for anything that is within normal flow. I changed the default to green instead. Green = go = execute is the mneumonic I use.
+The default unix colors designates the color red for executable. I tend not to use red for anything that is within normal flow. I changed the default to green instead. Green = go = execute is the mnemonic I use.
 
 If you prefer things the way they are, by all means, comment out the export LSCOLORS bit.
 
@@ -87,7 +89,10 @@ If you prefer things the way they are, by all means, comment out the export LSCO
     export LSCOLORS=Exfxbxdxcxegedabagacad
 ```
 
+
 ### Color palette for iTerm
+
+If you are on the Mac and you don't already use iTerm, use it. It's awesome. Go get it at http://iterm2.com
 
 This palette is based on the [Tango palette](http://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette) with some minor tweaks for better readability against a black background. 
 
@@ -101,9 +106,9 @@ Click on the color cell of each item in Basic Colors and ANSI Colors. The Apple 
 
 
 
-### colorprompt.sh
+### Everything together
 
-The actual prompt. If you are not using VirtualEnv for Python and you don't want to show git status, just remove the relevant lines. The file is fairly verbose:
+The actual prompt in the file named [colorprompt.sh](https://github.com/seeminglee/smlcandy/blob/master/colorprompt.sh) where the whole thing is put together to give you the nice prompt for better usability. If you are not using VirtualEnv for Python and you don't want to show git status, just remove the relevant lines. The file is fairly verbose:
 
 ```shell
     #!/usr/bin/env bash
