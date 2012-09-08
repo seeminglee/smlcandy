@@ -2,13 +2,21 @@
 
 ### Result
 
-![SML iTerm Screenshot](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
+What it looks like after applying the custom iTerm color scheme and the custom bash prompt:
+
+![Screenshot of iTerm](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm.png)
 
 ### Color palette
 
-This palette is largely based on the Tango palette with some tweaks for better readability against black background.
+This palette is based on the [Tango palette](http://en.wikipedia.org/wiki/Tango_Desktop_Project#Palette) with some minor tweaks for better readability against a black background. 
 
-![SML iTerm Screenshot](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm-pref-colors.png)
+To apply custom colors to iTerm, open up Preferences &gt; Colors:
+
+![Screenshot: iTerm Color Preferences](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-iterm-pref-colors.png)
+
+Click on the color cell of each item in Basic Colors and ANSI Colors. The Apple color palette will open up, where you can load up the file named [smlcandy.clr](http://github.com/seeminglee/smlcandy/raw/master/smlcandy.clr) and repeat the process until all the colors have changed:
+
+![Screenshot: Color palette preview](http://github.com/seeminglee/smlcandy/raw/master/img/screenshot-smlcandy-colors.png)
 
 ## List of Files
 
